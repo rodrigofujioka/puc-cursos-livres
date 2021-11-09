@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ <head>      
+    Número:<input id="valorParImpar" type="number"> <br />
+    <button onclick="parImpar()">Resposta</button><br />
+
+    Resposta: <div id='resposta' style='display:inline'>Resposta</div>
+
+<script>
+   function parImpar(){
+    var num = parseInt(document.getElementById("valorParImpar").value);
+    var resposta = document.getElementById('resposta');
+        
+          if (num % 2 == 0)
+           resposta.innerHTML = "Par";
+          else
+           resposta.innerHTML = "Ímpar";
+   }
+    </script>
+ </head>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Página HTML</title>
+</head>
+<body>
+
+
+  Idade: <input id="idade" type="number"><br/>
+  <button onclick="nomeFuncao()">Executar</button>
+
+  Respota: <div id="resposta"></div>
+
+
+<h2 id="header"></h2>
+<p id="idade"></p>
+<p id="semestre"></p>
+
+ <script>
+
+    function somar(valorA, valorB){
+        var resultado = valorA + valorB;
+        console.log(resultado);
+        alert("Resultado " + resultado);
+    }
+    
+    function exibeNome(nome){
+        alert(nome);
+    }
+
+    function verificaMaiorIdade(idade){
+        if(idade>=18){
+            return "Maior de idade";
+        }else{
+            return "Menor de idade";
+        }
+
+    }
+
+    var retorno = verificaMaiorIdade(18);
+    alert(retorno);
+
+    exibeNome("Rodrigo Fujioka");
+    somar(4,5);
+    somar(10,15);
+
+    var titulo = "Página do Fuji";
+    var idade = 38;
+    var semestre = 2021.2;
+
+    var h2 = document.querySelector("h2");
+    document.querySelector("#idade").textContent = idade;
+    document.querySelector("#semestre").textContent = semestre;
+    h2.textContent = titulo;
+
+ </script>   
+
+    
+</body>
+</html>

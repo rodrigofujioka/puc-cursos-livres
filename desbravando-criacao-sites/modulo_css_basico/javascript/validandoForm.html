@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validandoForm() {
+  let nomeInput = document.forms["jsForm"]["nome"].value;
+
+  if (nomeInput == "") {
+    alert("O valor deve ser preenchido");
+    return false;
+  }
+
+}
+</script>
+
+</head>
+<body>
+
+<h2>validação Java Script </h2>
+
+<form name="jsForm" action="#" onsubmit="return validandoForm()">
+  Nome: <input type="text" name="nome">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

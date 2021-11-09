@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function exibeData(){
+            console.log(new Date());
+           var h1 =  document.querySelector("#data");
+           h1.textContent =new Date();
+        }
+
+
+          setInterval(exibeData, 1000);
+          setTimeout(exibeData, 5000);
+    </script>
+
+    <p id="data"></p>
+</body>
+</html>
+
