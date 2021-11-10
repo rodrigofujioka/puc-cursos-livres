@@ -10,7 +10,8 @@
 
 
   Idade: <input id="idade" type="number"><br/>
-  <button onclick="nomeFuncao()">Executar</button>
+
+  <button onclick="maiorIdade()">Executar</button>
 
   Respota: <div id="resposta"></div>
 
@@ -20,6 +21,17 @@
 <p id="semestre"></p>
 
  <script>
+function maiorIdade(){
+    var num = parseInt(document.getElementById("idade").value);
+    var resposta = document.getElementById('resposta');
+        
+          if (num >= 18){
+           resposta.innerHTML = "Maior idade";
+          }else{
+           resposta.innerHTML = "Menor de idade";
+          }
+   }
+
 
     function somar(valorA, valorB){
         var resultado = valorA + valorB;

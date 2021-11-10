@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>      
+    Receita:<input id="valorReceita" type="number"> 
+    Despesa: <input id="valorDespesa" type="number"> 
+    <button onclick="calcularSaldo()">Calcular</button> 
+    
+    <br />
+    <br />
+
+    Resposta: <div id='resposta' style='display:inline'>Resposta</div>
+
+<script>
+   function calcularSaldo(){
+    var receita = parseInt(document.getElementById("valorReceita").value);
+    var despesa = parseInt(document.getElementById('valorDespesa').value);
+    var resposta  = document.getElementById('resposta');
+        
+    var saldo = receita-despesa;
+    
+    if(saldo<0){
+         resposta.innerHTML = "Saldo Negativo : "+saldo;
+    }else{
+         resposta.innerHTML = "Saldo Positivo : " +saldo;
+    }
+        
+   }
+    </script>
+ </head>
+</html>
